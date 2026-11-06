@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Status Keeper Privacy Policy</title>
+<meta name="description" content="Status Keeper collects no data. Settings stay in your browser.">
+<style>
+  :root { --bg:#EDF2F1; --card:#FFFFFF; --text:#0F1E2A; --muted:#5E6E7A; --line:#DFE6EA; --jade:#0B8461; --tint:#E3F4EE; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#0E1C27; --card:#142836; --text:#EAF1F4; --muted:#A7B8C4; --line:#223A4B; --jade:#3CC79C; --tint:#16362F; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:16px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif; }
+  main { max-width:720px; margin:0 auto; padding:48px 16px 64px; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:18px; padding:32px 28px; }
+  .brand { display:flex; align-items:center; gap:12px; margin-bottom:24px; }
+  .brand svg { flex:none; }
+  .brand b { font-size:18px; }
+  h1 { font-size:30px; line-height:1.2; margin:0 0 6px; letter-spacing:-0.5px; }
+  .date { color:var(--muted); font-size:14px; margin:0 0 20px; }
+  .short { background:var(--tint); border-radius:12px; padding:14px 16px; margin:0 0 8px; }
+  h2 { font-size:19px; margin:30px 0 8px; }
+  ul { padding-left:20px; margin:8px 0; }
+  li { margin:4px 0; }
+  code { font-size:14px; background:var(--tint); padding:1px 6px; border-radius:6px; }
+  .foot { color:var(--muted); font-size:14px; margin-top:28px; border-top:1px solid var(--line); padding-top:18px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="card">
+    <div class="brand">
+      <svg width="36" height="36" viewBox="0 0 100 100" aria-hidden="true">
+        <rect width="100" height="100" rx="24" fill="#12A27A"/>
+        <path d="M 55.7 28.7 A 22 22 0 1 0 71.3 44.3" fill="none" stroke="#fff" stroke-width="8" stroke-linecap="round"/>
+        <circle cx="50" cy="50" r="9.5" fill="#fff"/><circle cx="65.6" cy="34.4" r="7" fill="#fff"/>
+      </svg>
+      <b>Status Keeper</b>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="date">Effective date: November 5, 2026</p>
+    <p>Status Keeper is a Chrome extension that keeps your chat status from switching to Away during the hours you choose. This policy explains what the extension does with your information.</p>
+    <p class="short"><b>The short version:</b> Status Keeper collects nothing and sends nothing. Your settings stay in your browser.</p>
+
+    <h2>What we collect</h2>
+    <p>Nothing. Status Keeper does not collect, store on any server, sell, share or transmit any personal information, browsing history, messages, or usage data. There are no analytics, no tracking and no ads. The extension does not use remote code.</p>
+
+    <h2>What stays in your browser</h2>
+    <p>Status Keeper saves these settings using Chrome's local storage (<code>chrome.storage.local</code>), on your own computer only:</p>
+    <ul>
+      <li>Whether the extension is on or off</li>
+      <li>Your work days, start and end time, and lunch break</li>
+      <li>A running quick timer, if you started one</li>
+      <li>Whether to pause when your computer is locked</li>
+      <li>How often it nudges (every 1, 2 or 4 minutes)</li>
+      <li>How long it has been active today, shown in the popup</li>
+    </ul>
+    <p>This data never leaves your browser. Removing the extension deletes it.</p>
+
+    <h2>Permissions and why we need them</h2>
+    <ul>
+      <li><b>storage:</b> saves the settings listed above in your browser.</li>
+      <li><b>alarms:</b> checks every 30 seconds whether the extension should be active, based on your work hours and timer.</li>
+      <li><b>idle:</b> detects when your computer is locked, so the extension pauses and resumes when you come back. It only reads whether the computer is locked or not, nothing else.</li>
+      <li><b>Host access to teams.microsoft.com, teams.cloud.microsoft and teams.live.com:</b> runs a small script on that page that sends a light, simulated mouse movement, and lets the popup find the open tab. The script does not read, record or send your messages, contacts or any page content. It runs on no other sites.</li>
+    </ul>
+
+    <h2>Third parties</h2>
+    <p>Status Keeper does not share any data with third parties, because it has none to share.</p>
+
+    <h2>Children</h2>
+    <p>Status Keeper is not directed at children and does not knowingly collect any information from anyone.</p>
+
+    <h2>Changes to this policy</h2>
+    <p>If this policy changes, the new version will be posted at this same address with a new effective date.</p>
+
+    <h2>Contact</h2>
+    <p>Questions about this policy: buildwithabdallah@gmail.com</p>
+
+    <p class="foot">Status Keeper is an independent project. It is not affiliated with, endorsed by, or sponsored by Microsoft Corporation. Microsoft Teams is a trademark of Microsoft Corporation.</p>
+  </div>
+</main>
+</body>
+</html>
