@@ -1,0 +1,135 @@
+STATUS KEEPER: NEW ITEM FOR THE UNITED STATES
+Everything you need to paste, and the steps. Prepared Nov 6, 2026.
+
+WHY A NEW ITEM
+Google's Oct 22 email (case 14-1854443) removed the old item in the United States.
+It says the only ways back are: the complainant agrees, or you publish
+"a new, non-infringing version of your item ... under a new package name".
+The Nov 6 email says the old item (version 1.2, "Status Keeper") is published,
+but it does not say the US block was lifted. So the old item still does not
+show in the US. A new item gets a new item ID, so it counts as a new package.
+
+ONE RISK TO KNOW
+The Chrome Web Store spam policy says one developer must not publish
+"multiple extensions that provide duplicate experiences or functionality".
+To lower this risk:
+- The new item is for the United States ONLY.
+- The old item already does not show in the United States.
+  So no country sees two copies.
+- The "Test instructions" note below tells the reviewer why the new item exists.
+If Google still rejects it as a duplicate, the other way is one item for
+every country: publish the new item in all regions and unpublish the old one.
+Your current users would not move over by themselves.
+
+
+FILES IN THIS FOLDER
+- status-keeper-1.2.zip   the package to upload. Same file as the approved 1.2.
+                          No code changes. manifest.json has no "key" field,
+                          so the store gives it a new item ID.
+- images/icon-128.png              store icon (128 x 128)
+- images/screenshot-1-hero.png     screenshot (1280 x 800)
+- images/screenshot-2-schedule.png screenshot (1280 x 800)
+- images/screenshot-3-control.png  screenshot (1280 x 800)
+- images/promo-small-440x280.png   small promo tile
+
+
+=====================================================================
+TEXT TO PASTE
+=====================================================================
+
+== Store listing ==
+
+Title: comes from the zip (Status Keeper). Nothing to type.
+Summary: comes from the zip. Nothing to type.
+
+Category: Workflow & Planning (same as the old item)
+Language: English
+
+Description:
+
+Status Keeper stops your status from flipping to Away when you step back from the keyboard for a few minutes, for example while reading a long document, on a phone call, or watching a training video. It only runs during the hours you choose.
+
+What it does:
+- Work hours: pick your days, start and end time, and a lunch break. Status Keeper starts and stops by itself.
+- Quick timers: keep your status active for 30 minutes, 1 hour or 2 hours, then it goes back to your schedule.
+- Pauses when your computer is locked, and resumes when you unlock it.
+- Choose how often it nudges: every 1, 2 or 4 minutes.
+- Shows what it is doing right now, when it stops, and how long it has been active today.
+- Light and dark mode.
+
+How it works: it sends a small, harmless mouse movement to the open chat tab at the interval you choose. It runs only on that page.
+
+Privacy: no account, no sign-in, no data collected. Your settings are stored only in your browser.
+
+Compatibility: works with Microsoft Teams in the browser.
+
+Status Keeper is an independent project. It is not affiliated with, endorsed by, or sponsored by Microsoft Corporation. Microsoft Teams is a trademark of Microsoft Corporation.
+
+Promo video: use the same YouTube link as the old item, or leave it empty.
+Homepage URL / Support URL: same as the old item, or leave empty.
+
+
+== Privacy practices ==
+
+Single purpose description:
+Keeps the user's status active in a web chat tab during the hours the user chooses, by sending small simulated mouse movements to that tab.
+
+storage justification:
+Saves the user's settings (work hours, timer, nudge interval) and today's active time in the browser.
+
+alarms justification:
+Checks every 30 seconds whether the extension should be active, based on the user's work hours and timer.
+
+idle justification:
+Detects when the computer is locked, so the extension pauses and resumes when the user returns.
+
+Host permission justification:
+Runs the content script that sends the small mouse movement to the open chat tab, and finds that tab to show its status in the popup. No other sites.
+
+Are you using remote code?
+No, I am not using remote code.
+
+Data usage:
+Tick NO data type boxes (the extension collects nothing).
+Tick all three certification boxes (no selling data, no unrelated use, no credit use).
+
+Privacy policy URL:
+Paste the same privacy policy link you used for the old item (your GitHub Pages page).
+
+
+== Distribution ==
+
+Visibility: Public
+Regions: clear "All regions", then tick only "United States".
+Payment: free (no in-app purchases).
+
+
+== Test instructions (only the reviewer sees this) ==
+
+This item is the United States version of Status Keeper (item lncpjjndooodmhmcmilfkmgefhhjdhhp). The old item was removed in the United States for trademark case 14-1854443 because of its old title. Google's notice said a new, non-infringing item under a new package name is the way to return. This new item is limited to the United States only, so no country has two copies. The title has no third-party trademark. To test: open Microsoft Teams on the web in one tab, open the Status Keeper popup, and start a 30-minute timer.
+
+
+=====================================================================
+STEPS IN THE DASHBOARD
+=====================================================================
+
+Before you start: send the reply to Google's Nov 3 case (79-1860056).
+It is already drafted in the rename task. It is due about Nov 10.
+
+1. Open the Chrome Web Store Developer Dashboard and sign in.
+2. Click "Add new item" (or "New item").
+3. Choose status-keeper-1.2.zip from this folder and click Upload.
+4. Store listing tab: paste the Description. Set Category and Language.
+   Upload the icon, the 3 screenshots and the small promo tile from images/.
+5. Privacy tab: paste each answer from "Privacy practices" above.
+   Add the privacy policy URL.
+6. Distribution tab: Public. Clear "All regions", tick only United States.
+7. Test instructions tab: paste the note above.
+8. Click "Save draft". Check that no tab shows a red warning.
+9. Click "Submit for review".
+10. Do NOT change the old item. Keep it as it is for all other countries.
+
+Stop and tell me if:
+- the dashboard asks you to pay a fee,
+- it says you reached the item limit (your dashboard showed 1 of 4 used on Nov 6, so this should be fine),
+- or review is rejected for "duplicate" or "spam".
