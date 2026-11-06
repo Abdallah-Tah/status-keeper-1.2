@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Status Keeper</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+<main class="popup" id="popup">
+  <header class="p-head">
+    <img class="mark" src="icons/icon32.png" alt="" width="30" height="30">
+    <h1 class="name">Status Keeper</h1>
+    <button class="switch" id="master" role="switch" aria-checked="true" aria-label="Turn Status Keeper on or off"></button>
+  </header>
+
+  <section class="status" id="status" data-kind="active" aria-live="polite">
+    <div class="top">
+      <div class="dot" aria-hidden="true"></div>
+      <div>
+        <div class="label" id="s-label">KEEPING YOU AVAILABLE</div>
+        <div class="headline" id="s-head">Loading…</div>
+      </div>
+    </div>
+    <div class="sub" id="s-sub"></div>
+    <button class="open-teams" id="open-teams" hidden>Open Teams</button>
+    <div class="stats">
+      <div><span>Active today</span><b id="s-today">0m</b></div>
+      <div><span id="s-l2">Stops at</span><b id="s-v2">–</b></div>
+    </div>
+  </section>
+
+  <section class="sec" id="sec-timer">
+    <p class="cap">Keep active for</p>
+    <div class="chips" role="group" aria-label="Keep active for">
+      <button class="chip" id="t-30" data-min="30" aria-pressed="false">30 min</button>
+      <button class="chip" id="t-60" data-min="60" aria-pressed="false">1 hour</button>
+      <button class="chip" id="t-120" data-min="120" aria-pressed="false">2 hours</button>
+      <button class="chip" id="t-sched" aria-pressed="true">Schedule</button>
+    </div>
+  </section>
+
+  <section class="sec" id="sec-hours">
+    <div class="sec-row"><p class="cap">Work hours</p><button class="link" id="edit" aria-expanded="false" aria-controls="editor">Edit</button></div>
+    <div class="days" role="group" aria-label="Work days">
+      <button class="day" data-i="0" aria-label="Monday">M</button>
+      <button class="day" data-i="1" aria-label="Tuesday">T</button>
+      <button class="day" data-i="2" aria-label="Wednesday">W</button>
+      <button class="day" data-i="3" aria-label="Thursday">T</button>
+      <button class="day" data-i="4" aria-label="Friday">F</button>
+      <button class="day" data-i="5" aria-label="Saturday">S</button>
+      <button class="day" data-i="6" aria-label="Sunday">S</button>
+    </div>
+    <div class="hours"><b id="hours-text">9:00 AM – 5:30 PM</b><span id="lunch-text">Lunch off 12:00–12:45</span></div>
+
+    <form class="editor" id="editor" hidden>
+      <label class="check"><input type="checkbox" id="use-schedule"> Only run during work hours</label>
+      <div class="grid2">
+        <label>Start <input type="time" id="start" required></label>
+        <label>End <input type="time" id="end" required></label>
+      </div>
+      <label class="check"><input type="checkbox" id="lunch-on"> Lunch break</label>
+      <div class="grid2">
+        <label>From <input type="time" id="lunch-start"></label>
+        <label>To <input type="time" id="lunch-end"></label>
+      </div>
+      <p class="error" id="editor-error" hidden></p>
+      <div class="editor-actions">
+        <button type="button" class="btn ghost" id="cancel">Cancel</button>
+        <button type="submit" class="btn" id="save">Save hours</button>
+      </div>
+    </form>
+  </section>
+
+  <hr class="divide">
+  <div class="row">
+    <div><div class="t">Pause when computer is locked</div><div class="s">Resumes when you're back</div></div>
+    <button class="switch" id="lockpause" role="switch" aria-checked="true" aria-label="Pause when computer is locked"></button>
+  </div>
+  <div class="row">
+    <div class="t">Nudge every</div>
+    <div class="seg" role="group" aria-label="Nudge interval">
+      <button data-n="1" aria-pressed="false">1 min</button>
+      <button data-n="2" aria-pressed="true">2 min</button>
+      <button data-n="4" aria-pressed="false">4 min</button>
+    </div>
+  </div>
+
+  <footer class="p-foot">Works with Microsoft Teams on the web<small>Not affiliated with Microsoft</small></footer>
+</main>
+<script type="module" src="popup.js"></script>
+</body>
+</html>
